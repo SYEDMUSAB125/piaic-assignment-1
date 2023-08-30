@@ -209,8 +209,38 @@
 //     }
 // })
 // 34
-var pizzas = ["afghan jaelebi", "peporni", "crown crust"];
-pizzas.forEach(function (pizza) {
-    console.log(pizza);
-    console.log("i like ".concat(pizza, " pizza"));
-});
+// const pizzas:string[] =["afghan jaelebi","peporni","crown crust"];
+// pizzas.forEach(pizza=>{
+//     console.log(pizza)
+//     console.log(`i like ${pizza} pizza`)
+// });
+// 35
+// const animals:string[] =["dog", "lion", "cat"];
+// animals.forEach(element=>{
+//     console.log(`${element} is very usefull for hunting purpose`)
+// })
+// 36
+// let make_shirt = (size:string,message:string )=>{
+//  console.log(`the size of the tshirt is ${size} and should pe print on ${message}`)
+// }
+// make_shirt("medium","gumaan ys")
+// 37
+// let make_shirt = (message1:string,message:string )=>{
+//      console.log(`the size of the tshirt is large and medium is available and should pe print on ${message1}`);
+//      console.log(`any size of shirt is available with back print ${message}`)
+//     }
+//     make_shirt("i love typescript", "consistency is the key of succes");
+// 38
+// let describe_city = (city:string, country:string="australia")=>{
+//     console.log(`${city} is in ${country}`)
+// }
+// describe_city("karachi", "pakistan");
+// describe_city("toronto");
+// describe_city("islamabad", "pakistan");
+// 39
+var city_country = function (city, country) {
+    return ("\"".concat(city, ",").concat(country, "\""));
+};
+console.log(city_country("karachi", "Pakistan"));
+console.log(city_country("peshawar", "Pakistan"));
+console.log(city_country("lahore", "Pakistan"));

@@ -238,9 +238,96 @@
 // describe_city("toronto");
 // describe_city("islamabad", "pakistan");
 // 39
-var city_country = function (city, country) {
-    return ("\"".concat(city, ",").concat(country, "\""));
+// let city_country = (city:string, country:string):string=>{
+//     return (`"${city},${country}"`)
+// }
+// console.log(city_country("karachi", "Pakistan"));
+// console.log(city_country("peshawar", "Pakistan"));
+// console.log(city_country("lahore", "Pakistan"));
+// 40
+//     class Album{
+//         name:string;
+//         title:string;
+//         constructor( n:string, t:string){
+//             this.name= n;
+//             this.title = t;
+//         }
+//     }
+//     class Album1{
+//         name:string;
+//         title:string;
+//         track:number;
+//         constructor( nu:string, tu:string, tru:number){
+//             this.name= nu;
+//             this.title = tu;
+//             this.track = tru
+//         }
+//     }
+//     let make_album = (artistname1:string, albumtittle1:string,artistname2:string, albumtittle2:string,artistname3:string, albumtittle3:string)=>{
+//        let artist1 = new Album(artistname1,albumtittle1);
+//        let artist2 = new Album(artistname2,albumtittle2);
+//        let artist3 = new Album(artistname3,albumtittle3);
+//        console.log(artist1)
+//        console.log(artist2)
+//        console.log(artist3)
+//     };
+//     let call=(artistnam:string, albumtittl:string,track:number)=>{
+//       let makeAlbum = new Album1(artistnam,albumtittl,track)
+//       console.log(makeAlbum);
+//     };
+//     make_album("atifaslam","terebin","young stunner", "guman","asim azhar", "tu jo na mila mjhei ");
+//  call("atifaslam","terebin", 5);
+// 41
+// const magicians:string[]=["ahsan", "misbah","chiku","ahmed"]
+// let printArray = ()=>{
+//  magicians.forEach(magician=> console.log(magician))
+// }
+// printArray()
+// 42
+// const magicians:string[]=["ahsan", "misbah","chiku","ahmed"]
+// let show_magician = ()=>{
+//  magicians.forEach(magician=> console.log(`The Great ${magician} magician`))
+// }
+// show_magician()
+// 43
+// const magicians:string[]=["ahsan", "misbah","chiku","ahmed"];
+// let make_great=()=>{
+//  let greetmagicians:string[]=[];
+//  greetmagicians = magicians.map(element=>{
+//      return element  },0);
+//      let newgreetmagicians:string[]=[]
+//     for(let i=0;i<greetmagicians.length;i++){
+//         newgreetmagicians.push(`Greet ${greetmagicians[i]}`)
+//     } 
+//     let show_magician= ()=>{console.log(newgreetmagicians,magicians)}
+//     show_magician()
+// };
+// make_great()
+// 44
+// const sandwhiches:string[]=["bread butter", "nutella peanut"];
+// const sandwhiches1:string[]=["bread butter12", "nutella peanut34"];
+// const sandwhiches2:string[]=["bread butter123", "nutella peanut345"];
+// let tellSandwichflavour=(a:string[])=>{
+//     console.log("the sandwhich contain")
+//     sandwhiches.forEach(element => {
+//         console.log(element)
+//     });
+// }
+// tellSandwichflavour(sandwhiches);
+// tellSandwichflavour(sandwhiches1);
+// tellSandwichflavour(sandwhiches2)
+//  45
+var Car = /** @class */ (function () {
+    function Car(n, t, c, m) {
+        this.name = n;
+        this.manfName = t;
+        this.color = c;
+        this.model = m;
+    }
+    return Car;
+}());
+var car_details = function (name, manfName, color, model) {
+    var car_summary = new Car(name, manfName, color, model);
+    console.log(car_summary);
 };
-console.log(city_country("karachi", "Pakistan"));
-console.log(city_country("peshawar", "Pakistan"));
-console.log(city_country("lahore", "Pakistan"));
+car_details("toyota", "corolla", "white", 1700);

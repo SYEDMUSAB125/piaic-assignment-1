@@ -1,3 +1,16 @@
+// 1
+// let name = "eric"
+// console.log(`Hello ${name}, would you like to learn some python today`);
+// 2
+var name = "eric";
+console.log(name.toLowerCase);
+console.log(name.toUpperCase);
+function toTitleCase(name) {
+    return name.toLowerCase().split(' ').map(function (word) {
+        return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' ');
+}
+console.log(toTitleCase(name));
 // 11
 // const names:string[]=["ahmer","misbah","ahmed","huzaifah"];
 // names.forEach(name=>{
@@ -230,21 +243,21 @@
 //      console.log(`any size of shirt is available with back print ${message}`)
 //     }
 //     make_shirt("i love typescript", "consistency is the key of succes");
-// 38
-// let describe_city = (city:string, country:string="australia")=>{
-//     console.log(`${city} is in ${country}`)
-// }
-// describe_city("karachi", "pakistan");
-// describe_city("toronto");
-// describe_city("islamabad", "pakistan");
-// 39
-// let city_country = (city:string, country:string):string=>{
-//     return (`"${city},${country}"`)
-// }
-// console.log(city_country("karachi", "Pakistan"));
-// console.log(city_country("peshawar", "Pakistan"));
-// console.log(city_country("lahore", "Pakistan"));
-// 40
+//     38
+//     let describe_city = (city:string, country:string="australia")=>{
+//         console.log(`${city} is in ${country}`)
+//     }
+//     describe_city("karachi", "pakistan");
+//     describe_city("toronto");
+//     describe_city("islamabad", "pakistan");
+//     39
+//     let city_country = (city:string, country:string):string=>{
+//         return (`"${city},${country}"`)
+//     }
+//     console.log(city_country("karachi", "Pakistan"));
+//     console.log(city_country("peshawar", "Pakistan"));
+//     console.log(city_country("lahore", "Pakistan"));
+//     40
 //     class Album{
 //         name:string;
 //         title:string;
@@ -317,17 +330,19 @@
 // tellSandwichflavour(sandwhiches1);
 // tellSandwichflavour(sandwhiches2)
 //  45
-var Car = /** @class */ (function () {
-    function Car(n, t, c, m) {
-        this.name = n;
-        this.manfName = t;
-        this.color = c;
-        this.model = m;
-    }
-    return Car;
-}());
-var car_details = function (name, manfName, color, model) {
-    var car_summary = new Car(name, manfName, color, model);
-    console.log(car_summary);
-};
-car_details("toyota", "corolla", "white", 1700);
+// class Car{
+//             name:string;
+//             manfName:string;
+//             color:string;
+//             model:number
+//             constructor( n:string, t:string , c:string, m:number){
+//                 this.name= n;
+//                 this.manfName = t;
+//                 this.color=c;
+//                 this.model=m;
+//             }}
+//  let car_details=(name:string, manfName:string,color:string,model:number)=>{
+//           let car_summary = new Car(name,manfName,color,model)
+//           console.log(car_summary);
+//         };
+//         car_details("toyota","corolla","white",1700);

@@ -1,3 +1,18 @@
+2
+let name = "eric"
+console.log(`Hello ${name}, would you like to learn some python today`);
+3
+let name = "eric"
+console.log(name.toLowerCase());
+console.log(name.toUpperCase());
+function toTitleCase(name:string) {
+    return name.toLowerCase().split(' ').map(function (word) {
+      return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(' ');
+  }
+  console.log(toTitleCase(name));
+4
+console.log("Quiad e Azam ali jinnah once said , Before you make a decision… “Think a hundred times before you take a decision, but once that decision is taken, stand by it as one man.” ")
 11
 const names:string[]=["ahmer","misbah","ahmed","huzaifah"];
 names.forEach(name=>{

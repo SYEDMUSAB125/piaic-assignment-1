@@ -1,16 +1,39 @@
-// 1
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// 2
 // let name = "eric"
 // console.log(`Hello ${name}, would you like to learn some python today`);
-// 2
-var name = "eric";
-console.log(name.toLowerCase);
-console.log(name.toUpperCase);
-function toTitleCase(name) {
-    return name.toLowerCase().split(' ').map(function (word) {
-        return (word.charAt(0).toUpperCase() + word.slice(1));
-    }).join(' ');
-}
-console.log(toTitleCase(name));
+// 3
+// let name = "eric"
+// console.log(name.toLowerCase());
+// console.log(name.toUpperCase());
+// function toTitleCase(name:string) {
+//     return name.toLowerCase().split(' ').map(function (word) {
+//       return (word.charAt(0).toUpperCase() + word.slice(1));
+//     }).join(' ');
+//   }
+//   console.log(toTitleCase(name));
+// 4
+// console.log("Quiad e Azam ali jinnah once said , Before you make a decision… “Think a hundred times before you take a decision, but once that decision is taken, stand by it as one man.” ")
+let personName = "Hazrat Muhammad (s.a.w)";
+let message = "Do try for the things that benifits you and don't be lazy for it and ask ALLAH for the help";
+console.log(`${personName} once said, "${message}"`);
+let var1 = "A quick", var2 = "brown fox", var3 = "jumps over", var4 = "the lazy", var5 = "dog";
+console.log(var1 + "\t" + var2 + "\n" + var3 + "\r" + var4 + "\s" + var5);
+console.log("5 plus 3 is:", 5 + 3);
+console.log("20 minus 12 is:", 20 - 12);
+console.log("4 multiply by 2 is:", 4 * 2);
+console.log("64 divided by 8 is", 64 / 8);
+console.log("cube of 2 is", 2 ** 3);
+console.log(5 + 3);
+console.log(20 - 12);
+console.log(4 * 2);
+console.log(64 / 8);
+console.log(2 ** 3);
+let favoriteNumber = 2571;
+console.log(`My favorite number is ${favoriteNumber}`);
+let randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
 // 11
 // const names:string[]=["ahmer","misbah","ahmed","huzaifah"];
 // names.forEach(name=>{
